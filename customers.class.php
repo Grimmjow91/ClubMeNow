@@ -48,7 +48,8 @@ class Customer {
         $this->generate_form_group("name", $this->nameError, $this->name, "autofocus");
         $this->generate_form_group("email", $this->emailError, $this->email);
         $this->generate_form_group("mobile", $this->mobileError, $this->mobile);
-        $this->generate_form_group("password", $this->passwordError, $this->password, "", "password");
+       $this->generate_form_group("password", $this->passwordError, $this->password, "", "password");
+	
         $this->generate_html_bottom(1);
     }
     
@@ -127,7 +128,7 @@ class Customer {
         $this->generate_form_group("name", $this->nameError, $this->name, "autofocus onfocus='this.select()'");
         $this->generate_form_group("email", $this->emailError, $this->email);
         $this->generate_form_group("mobile", $this->mobileError, $this->mobile);
-        $this->generate_form_group("password", $this->$passwordError, $this->password, $fieldType="password");
+        $this->generate_form_group("password", $this->$passwordError, $this->password, "", "password");
 
         $this->generate_html_bottom(3);
     }
